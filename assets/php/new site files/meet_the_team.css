@@ -1,0 +1,237 @@
+/* ---------------------------------- */
+/* ------- TABLE OF CONTENTS -------- */
+/* ---------------------------------- */
+
+/* 
+    1. HEADER
+    2. FOOTER
+    1. SLICK SLIDER
+    3. COLIO PORTFOLIO
+    2. CONTAINERS  
+    3. IMAGES
+    4. TEXT CONTENT 
+    5. COLORS 
+    6. BUTTONS 
+    3. EFFECTS 
+    4. BLOG POSTS
+    7. MEDIA QUERIES 
+
+*/
+
+
+/* ------------------------------------ */
+/* --- ENVIRO TECH ROOFING MAIN CSS --- */
+/* ------------------------------------ */
+
+
+/* ------------------------------ */
+/* ----------- HEADER ----------- */
+/* ------------------------------ */
+
+
+
+/* ------------------------------ */
+/* ----------- FOOTER ----------- */
+/* ------------------------------ */
+
+/* ---------------------------------- */
+/* --------- SLICK SLIDER ----------- */
+/* ---------------------------------- */
+
+
+/* ---------------------------------- */
+/* -------- COLIO PORTFOLIO --------- */
+/* ---------------------------------- */
+
+
+
+
+/* ---------------------------------- */
+/* ----------- CONTAINERS ----------- */
+/* ---------------------------------- */
+
+.our-team {
+    height: 500px;
+}
+
+.our-team .inner {
+
+}
+
+.title-section {
+
+}
+
+.team-members {
+    padding: 100px 0;
+}
+
+.team-member {
+
+}
+
+.member-card {
+
+}
+
+.member-card:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: black;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: 1;
+    transition: .1s transform, .5s opacity ease;
+}
+
+.member-card:after {
+    content: "";
+    width: 105%; 
+    height: 115%;
+    position: absolute;
+    left: -50px;
+    top: -25px;
+    background: #FFE133;
+    z-index: -1;
+    opacity: 0.5;
+    transition: .5s background ease, 0.6s left ease;
+}
+
+.member-card:hover {
+    cursor: pointer;
+}
+
+.member-card:hover:before {
+    content: "";
+    opacity: 0.4;
+    height: 100%;
+    transform: translate3d(0px, 0%, 0px);
+}
+
+.member-card:hover:after {
+    content: "";
+    opacity: .75;
+    left: -40px;
+}
+
+.member-card:hover .member-info {
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+
+.member-info {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    z-index: 2;
+    transition: .3s opacity, .6s transform ease;
+    transform: translate(0%, 10%);
+}
+
+.member-card:hover h5 {
+    margin-top: 55px;
+}
+
+.member-info .social-media-element {
+    transition: .6s ease all;
+}
+
+/* ---------------------------- */
+/* --------- IMAGES ----------- */
+/* ---------------------------- */
+
+.bk-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #105a28 url(https://s3-us-east-2.amazonaws.com/envirotechroofing/envirotech/wp-content/uploads/2020/06/19135812/meet_the_team_env.png) no-repeat 50% 50%;
+    background: #18502a url(https://s3-us-east-2.amazonaws.com/envirotechroofing/envirotech/wp-content/uploads/2020/06/19135812/meet_the_team_env.png) no-repeat 50% 50%;
+}
+
+.bk-img:before {
+    left: 0;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, white, transparent);
+    opacity: .1;
+}
+
+.bk-img:after {
+    content: "";
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(295deg, white, transparent);
+    opacity: 0.1;
+}
+
+.team-member img {
+    min-width: 300px;
+    max-height: 300px;
+    object-fit: cover;
+    box-shadow: 1px 1px 15px #00000042;
+    border-radius: 4px;
+}
+
+
+/* ---------------------------------- */
+/* --------- TEXT CONTENT ----------- */
+/* ---------------------------------- */
+
+.title-section h1 {
+    font-size: 4rem;
+    margin-bottom: 35px;
+}
+
+.title-section p {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.title-section p:before {
+    content: "";
+    border-top: 6px yellow solid;
+    border-color: #FFE133;
+    display: block;
+    width: 45px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.team-member h5 {
+    font-weight: bold;
+}
+
+.team-member h6 {
+
+}
+
+
+
+/* --------------------------- */
+/* --------- COLOR ----------- */
+/* --------------------------- */
+
+
+/* ----------------------------- */
+/* --------- BUTTONS ----------- */
+/* ----------------------------- */
+
+
+
+/* ----------------------------- */
+/* ------ TESTIMONIALS --------- */
+/* ----------------------------- */
+
+
